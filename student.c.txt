@@ -1,0 +1,35 @@
+#include<stdio.h>
+struct employee{
+int sid;
+char stdname[20];
+int marks;};
+
+void employee(struct employee c1)
+{
+    int sid,marks,i,min=100,id;
+    char stdname[20];
+    for(i=0;i<2;i++)
+    {
+        printf("Enter student ID: ");
+        scanf("%d",&c1.sid);
+        printf("Enter student name: ");
+        scanf("%s",&c1.stdname);
+        printf("Enter student marks: ");
+        scanf("%d",&c1.marks);
+        printf("/n");
+
+        printf("%d \n %s \n %d \n",c1.sid,c1.stdname,c1.marks);
+
+        if(min>c1.marks)
+        {
+            min=c1.marks;
+            id=c1.sid;
+        }
+    }
+    printf("Your ID number %d max marks is %d",id,min);
+    }
+    int main()
+    {
+        struct employee c1;
+        employee(c1);
+    }
