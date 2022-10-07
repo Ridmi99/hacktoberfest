@@ -1,2 +1,2 @@
 # hacktoberfest
-Contribution for hacktoberfest 20222
+Contribution for hacktoberfest 2022
