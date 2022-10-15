@@ -25,3 +25,22 @@ void main()
     }
 
 }
+
+/*function to return the average of 5 integers. (input 5 integers)*/
+#include<stdio.h>
+int aveg()
+{
+    int avg;
+    int num,x,total=0;
+    for(x=1;x<=5;x++)
+    {
+        printf("Enter %d integer: ",x);
+        scanf("%d",&num);
+        total+=num;
+    }
+    avg=total/5;
+}
+int main()
+{
+    printf("the average is %d ",aveg());
+}
