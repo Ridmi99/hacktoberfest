@@ -1,3 +1,4 @@
+//selecting students marks from the ID
 #include<stdio.h>
 struct employee{
 int sid;
